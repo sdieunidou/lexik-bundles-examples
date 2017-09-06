@@ -1,0 +1,43 @@
+version: '2'
+
+services:
+
+    # APP
+    nginx:
+        build: docker/nginx
+        volumes_from:
+            - php
+        links:
+            - php
+        depends_on:
+            - php
+
+    php:
+        build: docker/php
+        volumes:
+            - ${SYMFONY_APP_PATH}:/symfony
+        links:
+            - mysql
+
+    php-cli:
+        build:
+            context: docker/php
+            dockerfile: Dockerfile-cli
+        volumes_from:
+            - php
+        links:
+            - mysql
+
+    mysql:
+        build: docker/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+            MYSQL_DATABASE: ${MYSQL_DATABASE}
+            MYSQL_USER: ${MYSQL_USER}
+            MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+        volumes:
+            - ${SYMFONY_APP_PATH}:/symfony
+            - "lexikapp_mysql:/var/lib/mysql"
+
+volumes:
+    lexikapp_mysql: ~
