@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5a60ca021560e137721c27c08ff22047",
+    "content-hash": "0a6e895a8edef1d2c3da49707cf5e1a4",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -1035,6 +1035,72 @@
                 "currency"
             ],
             "time": "2016-08-19T09:00:18+00:00"
+        },
+        {
+            "name": "lexik/mailer-bundle",
+            "version": "v2.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lexik/LexikMailerBundle.git",
+                "reference": "de9b63c26a5779ae4642388bf6b076aa9d1b80ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lexik/LexikMailerBundle/zipball/de9b63c26a5779ae4642388bf6b076aa9d1b80ef",
+                "reference": "de9b63c26a5779ae4642388bf6b076aa9d1b80ef",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": "~2.4",
+                "php": ">=5.5.9|~7.0",
+                "swiftmailer/swiftmailer": ">=4.1.3,~5.0",
+                "symfony/framework-bundle": "~2.3|~3.0",
+                "symfony/intl": "~2.3|~3.0",
+                "twig/twig": "~1.3|~2.0"
+            },
+            "require-dev": {
+                "doctrine/data-fixtures": "~1.1",
+                "phpunit/phpunit": "~4.7",
+                "symfony/doctrine-bridge": "~2.8|~3.0",
+                "symfony/validator": "~2.8|~3.0"
+            },
+            "suggest": {
+                "sonata-project/admin-bundle": "require for the sonata frontend"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lexik\\Bundle\\MailerBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dev Lexik",
+                    "email": "dev@lexik.fr"
+                },
+                {
+                    "name": "Laurent Heurtault",
+                    "email": "l.heurtault@lexik.fr"
+                }
+            ],
+            "description": "This bundle allow you to manage some HTML email templates stored in your database. Templates are written with Twig and use I18N.",
+            "homepage": "https://github.com/lexik/LexikMailerBundle",
+            "keywords": [
+                "Symfony2",
+                "bundle",
+                "mail",
+                "mailer"
+            ],
+            "time": "2017-07-10T14:59:32+00:00"
         },
         {
             "name": "monolog/monolog",

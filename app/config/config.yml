@@ -10,7 +10,7 @@ parameters:
 
 framework:
     #esi: ~
-    #translator: { fallbacks: ['%locale%'] }
+    translator: { fallbacks: ['%locale%'] }
     secret: '%secret%'
     router:
         resource: '%kernel.project_dir%/app/config/routing.yml'
@@ -72,3 +72,6 @@ lexik_currency:
     currencies:
         default: EUR              # [required] the default currency
         managed: [EUR, USD]  # [required] all currencies used in your app
+
+lexik_mailer:
+    admin_email: "%admin_email%"     # Admin email used to notify email templates errors

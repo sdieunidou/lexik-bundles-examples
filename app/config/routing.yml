@@ -1,3 +1,7 @@
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+
+LexikMailerBundle:
+    resource: "@LexikMailerBundle/Resources/config/routing.xml"
+    prefix:   /mailer
