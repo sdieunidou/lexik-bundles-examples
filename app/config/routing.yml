@@ -5,3 +5,7 @@ app:
 LexikMailerBundle:
     resource: "@LexikMailerBundle/Resources/config/routing.xml"
     prefix:   /mailer
+
+lexik_translation_edition:
+    resource: "@LexikTranslationBundle/Resources/config/routing.yml"
+    prefix:   /translation
