@@ -1038,22 +1038,22 @@
         },
         {
             "name": "lexik/mailer-bundle",
-            "version": "v2.0.7",
+            "version": "v2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lexik/LexikMailerBundle.git",
-                "reference": "de9b63c26a5779ae4642388bf6b076aa9d1b80ef"
+                "reference": "1b72bee16264f445674d234183ad61420efe0595"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lexik/LexikMailerBundle/zipball/de9b63c26a5779ae4642388bf6b076aa9d1b80ef",
-                "reference": "de9b63c26a5779ae4642388bf6b076aa9d1b80ef",
+                "url": "https://api.github.com/repos/lexik/LexikMailerBundle/zipball/1b72bee16264f445674d234183ad61420efe0595",
+                "reference": "1b72bee16264f445674d234183ad61420efe0595",
                 "shasum": ""
             },
             "require": {
                 "doctrine/orm": "~2.4",
                 "php": ">=5.5.9|~7.0",
-                "swiftmailer/swiftmailer": ">=4.1.3,~5.0",
+                "swiftmailer/swiftmailer": ">=4.1.3|~5.0|~6.0",
                 "symfony/framework-bundle": "~2.3|~3.0",
                 "symfony/intl": "~2.3|~3.0",
                 "twig/twig": "~1.3|~2.0"
@@ -1100,7 +1100,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2017-07-10T14:59:32+00:00"
+            "time": "2017-09-07T07:16:19+00:00"
         },
         {
             "name": "lexik/translation-bundle",
