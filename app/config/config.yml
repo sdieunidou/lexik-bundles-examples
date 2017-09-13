@@ -79,3 +79,7 @@ lexik_mailer:
 lexik_translation:
     fallback_locale: ["%locale%"]         # (required) default locale(s) to use
     managed_locales: ["%locale%", en] # (required) locales that the bundle has to manage
+    dev_tools:
+        enable: true
+        create_missing: true
+        file_format: yml
